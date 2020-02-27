@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Samprince-Mac</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="images/png" href="assets/images/tools.png">
+</head>
+
+<style>
+    body {
+        font-family: Fjalla One;
+    }
+    
+    .float-right {
+        margin-left: 600px;
+    }
+    
+    .landing {
+        background-image: url("assets/images/tek.png");
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: #FFF;
+        padding-bottom: 200px;
+    }
+    
+    .fuc {
+        background-color: white;
+        padding-bottom: -20px;
+        padding-left: 120px;
+    }
+    
+    .top {
+        margin-top: 100px;
+    }
+    
+    .prope {
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .big-check {
+        background-color: white;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 30px;
+        color: black;
+    }
+    
+    .row {
+        padding-left: 100px;
+    }
+    
+    .my-6 {
+        margin-left: 60px;
+    }
+    
+    .big-check2 {
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 25px;
+        color: black;
+    }
+    
+    .rows {
+        padding-right: 50px;
+    }
+    
+    .big-check3 {
+        background-color: white;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 25px;
+        color: black;
+    }
+    
+    .space {
+        padding-top: 10px;
+        padding-bottom: 100px;
+    }
+    
+    .footer-cols {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #333;
+        list-style: none;
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: repeat(5, 1fr);
+        text-align: left;
+        font-size: 15px;
+        padding: 30px 22px 10px 0px;
+        margin-top: 20px
+    }
+    
+    .footer-cols a:active {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .footer-cols a:hover {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .footer-cols ul li a {
+        color: white;
+    }
+    
+    .footer-cols ul li {
+        list-style: none;
+        padding-left: 50px;
+    }
+    
+    .footer-cols ul li:first-child {
+        font-size: 17px;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: white;
+    }
+    
+    .footer-bottom {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: grey;
+        color: white;
+        padding-left: 60px;
+        padding-top: 10px;
+    }
+    
+    .threebox>div {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 2;
+    }
+    
+    .threebox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .threebox .box {
+        border: solid 3px white;
+        padding: 40px 40px;
+        margin: 0px 15px;
+        border-radius: 5px;
+        position: relative;
+        transition: 0.3s;
+        align-self: center;
+    }
+    
+    .threebox .box ul {
+        list-style: none;
+    }
+    
+    .pad li {
+        padding-bottom: 10px;
+    }
+    
+    threebox>div p {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    @media screen and (max-width :580px) {
+        .float-right {
+            margin-left: auto;
+        }
+        .fuc {
+            margin-left: -120px
+        }
+        .footer-cols {
+            display: list-item;
+        }
+        .top {
+            font-size: 25px;
+        }
+        .text-left {
+            font-size: 20px;
+        }
+        .prop {
+            margin-left: auto;
+        }
+        .footer-cols {
+            display: list-item;
+            ;
+        }
+    }
+</style>
+
+<body>
+    <section class="landing">
+        <header class="fuc">
+            <nav class="navbar navbar-expand-lg navbar-light bg-icon">
+                <a href="#"><img src=" assets/images/Samprince-Mac.png" alt="bliss " width="90 " height="90"></a>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target"><span class="navbar-toggler-icon "></span></button>
+                <div class="collapse navbar-collapse" id="collapse_target">
+                    <div class="float-right">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="nav-item active ">
+                                <a class="nav-link mr-4 " href="#">Home<span class="sr-only ">(current)</span></a>
+                            </li>
+                            <li class="nav-item active ">
+                                <a class="nav-link mr-4" href="#">About <span class="sr-only ">(current)</span></a>
+                            </li>
+                            <li class="nav-item active ">
+                                <a class="nav-link mr-4 " href="# ">Work Station<span class="sr-only ">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle mr-4 text-dark" href="# " id="navbarDropdown " role="button " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
+                                            Contact Us </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                                    <a class="dropdown-item " href="# ">08104803000</a>
+                                    <a class="dropdown-item " href="# ">08051263229</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container top">
+            <h1 class="text-left prop">A Certified Apple Technician</h1>
+            <h1 class="text-left">We Offer Comprehensive services </h1>
+            <h1 class="text-left">tailored to your unique needs.</h1>
+            <h3 class="text-left prope">You get expert Apple repair services at cutting-edge rates!</h3>
+            <h3 class="text-left prope">We service and repair Apple products.</h3>
+            <h3 class="text-left prope">Including: Mac, iMac, MacBook, MacBook Pro and more</h3>
+            <h3 class="text-left prope"> We also help in data recovery for MacBooks</h3>
+            <h3 class="text-left prope"> We also do on-site service and profer digital solutions </h3>
+            <h3 class="text-left prope">We have the unique ability to offer extensive support on both warranty</h3>
+            <h3 class="text-left prope">and out-of-warranty Apple devices.</h3>
+        </div>
+    </section>
+
+    <div class="big-check">
+        <h3>
+            About
+        </h3>
+        <h4>The Repairs starts here
+        </h4>
+    </div>
+
+    <div class="container text-center bg-light">
+        <h2 class="text-center">SamPrince-Mac Services </h2>
+        <h3 class="container text-center">Get expert Apple repair services at cutting-edge rates!</h3>
+
+
+    </div>
+    <div class="container bg-light">
+        <div class="row">
+            <div class=" col-md-4 ">
+                <a href="# "><img src="assets/images/Rear.png " class="img-fluid " width="60% " height="50% "></a>
+                <p class="bold my-6">MacBook</p>
+            </div>
+            <div class=" col-md-4 ">
+                <a href="# "><img src="assets/images/rear1.png " class="img-fluid " width="60% " height="50% "></a>
+                <p class="bold my-6">MacBook Pro</p>
+            </div>
+            <div class=" col-md-4 ">
+                <a href="# "><img src="assets/images/rear2.png " class="img-fluid " width="60% " height="50% "></a>
+                <p class="bold my-6"> Book Air </p>
+            </div>
+        </div>
+    </div>
+    <div class=" bg-dark">
+        <div class="big-check2 bg-dark text-light">
+            <h2>
+                Computer Repair
+            </h2>
+            <h3>
+            </h3>
+        </div>
+        <div class="container threebox text-light">
+            <div>
+                <div class="box text-light">
+                    <h2 class="text-center">Premium Care Service</h2>
+                    <ul>
+                        <li>
+                            Full Hardware Check Only
+                        </li>
+                        <li>
+                            Repairs, Optimization & Tune-Up
+                        </li>
+                        <li>
+                            Malware & Virus Removal
+                        </li>
+                        <li>
+                            Samprince-Mac Security suite
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-light">
+                    <h2 class="my-4 mb-5">*PRICE*</h2>
+                </div>
+            </div>
+
+            <div>
+                <div class="box text-light">
+                    <h2 class="text-center text-light">Standard Care Service</h2>
+                    <ul>
+                        <li>
+                            Full Hardware Check Only
+                        </li>
+                        <li>
+                            Repairs, Optimization
+                        </li>
+                        <li>
+                            Tune-Up of the MacBook
+                        </li>
+                        <li>
+                            Full Software Check Only
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-light">
+
+                    <h2 class="my-4 mb-5">*PRICE*</h2>
+                </div>
+            </div>
+
+            <div>
+                <div class="box text-light">
+                    <h2 class="text-center text-light">Computer Diagnostics</h2>
+                    <ul>
+                        <li>
+                            Full Hardware Check Only
+                        </li>
+                        <li>
+                            Full Software Check Only
+                        </li>
+                        <li>
+                            Compliant Drive Erase
+                        </li>
+                        <li>
+                            Optional remote Diagnostics
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-light">
+
+                    <h2 class="my-4 mb-5">*PRICE*</h2>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="big-check3">
+        <h2>
+            Contact Us
+        </h2>
+        <h5>Don't Hesitate to contact us below
+        </h5>
+        <h6>1A Oshundairo Shomaoye str, Computer Village, Ikeja Lagos
+        </h6>
+        <a class="small text-dark mr-2" href="tel:08104803000">08104803000</a>
+        <a class="small text-dark" href="samprince2289@gmail.com">samprince2289@gmail.com</a>
+    </div>
+    <div class="container col-lg-6 col-lg-offset-6">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-1 col-12" type="Name " placeholder="Enter Name " aria-haspopup="Search ">
+        </form>
+    </div>
+    <br>
+    <div class="container col-lg-6 col-lg-offset-6">
+        <form class="form-inline my-2 my-lg-0 mb-5">
+            <input class="form-control mr-sm-1 col-12" type="Email" placeholder="Enter Email " aria-haspopup="Search ">
+        </form>
+    </div>
+    <br>
+    <div class="container col-lg-6 col-lg-offset-6">
+        <form class="form-inline my-2 my-lg-0 mb-5">
+            <input class="form-control mr-sm-1 col-12 space" type="Message" placeholder="Enter Your Message " aria-haspopup="Search ">
+        </form>
+    </div>
+    <div class="container col-lg-4 col-lg-offset-4">
+        <form>
+            <input class="my-4 mr-sm-1" type="checkbox" id="Women" name="Women" value="Women">
+            <label class="mr-sm-3 small" for="fruit1">I have agreed to Samprince-Mac's stated conditions in Terms and Conditions</label>
+        </form>
+    </div>
+    <div class="container col-lg-6 col-lg-offset-6">
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-dark my-2 my-sm-0 col-12" type="submit ">Submit Message</button>
+        </form>
+    </div>
+
+    <div>
+        <footer>
+            <div class="footer-cols text-dark">
+                <ul>
+                    <li>QUICK LINKS</li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Works</a>
+                    </li>
+                    <li>
+                        <a href="#">Buy and Sell</a>
+                    </li>
+                </ul>
+
+                <ul class="text-light">
+                    <li>VISIT</li>
+                    <li>
+                        1A, Oshunadairo.
+                    </li>
+                    <li>
+                        Off Ola-Ayeni Str.
+                    </li>
+                    <li>
+                        Computer Village.
+                    </li>
+                    <li>
+                        Ikeja, Lagos
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>FOLLOW</li>
+                    <li>
+                        <a href="https://www.instagram.com/samprince_mac_repairs/" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.snapchat.com/samprince/mac" target="_blank">snapchat</a>
+                    </li>
+                    <li>
+                        <a href="https://www.gmail.com/samprince2289@gmail.com/" target="_blank">GMail</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            Copyright &copy; 2020 Samprince-Mac
+        </div>
+    </div>
